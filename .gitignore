@@ -1,0 +1,46 @@
+# === Android Studio & IntelliJ ===
+*.iml
+.idea/
+*.iws
+*.ipr
+.DS_Store
+
+# === Gradle ===
+.gradle/
+build/
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+out/
+
+# === Local Config ===
+local.properties
+/local.properties
+
+# === VS Code (kalau make) ===
+.vscode/
+
+# === Signing keys (keamanan!) ===
+*.jks
+*.keystore
+
+# === APK & output ===
+*.apk
+*.ap_
+*.aab
+
+# === Log files & debug ===
+*.log
+
+# === Compose UI Preview cache ===
+.ui/
+
+# === Firebase config ===
+google-services.json
+firebase-service-account.json
+
+# === OS & system files ===
+Thumbs.db
+ehthumbs.db
+desktop.ini

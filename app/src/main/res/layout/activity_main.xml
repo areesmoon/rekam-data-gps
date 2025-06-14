@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        card_view:cardCornerRadius="12dp"
+        card_view:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama"
+                android:inputType="textPersonName"
+                android:drawableLeft="@android:drawable/ic_menu_edit"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/etDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Deskripsi"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/etAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat"
+                android:inputType="textPostalAddress"
+                android:padding="10dp"
+                android:layout_marginTop="8dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="12dp"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="6dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/ivFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Foto"
+                    android:background="@android:color/darker_gray" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvLokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lokasi: belum diambil"
+                android:layout_marginTop="12dp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="12dp">
+
+                <Button
+                    android:id="@+id/btnAmbilFoto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ambil Foto" />
+
+                <Button
+                    android:id="@+id/btnAmbilLokasi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ambil Lokasi"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnLihatData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lihat Data"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/teal_700"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>
